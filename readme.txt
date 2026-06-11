@@ -1,238 +1,63 @@
-# SD Media Gallery — WordPress Project Gallery Plugin
+# SD Media Gallery
 
-Professional project gallery plugin with fullscreen lightbox, thumbnail navigation, category filtering, Custom CSS editor, and responsive layouts.
+> A professional WordPress project gallery plugin with fullscreen lightbox, thumbnail navigation, category filtering, Custom CSS editor, and responsive layouts.
 
-Built by Shohidul Dev · #shohiduldev
-
----
-
-## What It Does
-
-SD Media Gallery helps you showcase renovation projects, portfolios, construction work, case studies, and image collections in a clean and professional gallery.
-
-Each project can contain unlimited images. Visitors can browse projects from a responsive grid and open a fullscreen lightbox with thumbnail navigation, keyboard controls, and mobile swipe support.
-
-Perfect for:
-
-* Renovation Companies
-* Construction Businesses
-* Interior Designers
-* Architects
-* Agencies
-* Portfolio Websites
-* Before & After Project Showcases
+Built by **[Shohidul Dev](https://threads.net/@shohiduldev)** · `#shohiduldev`
 
 ---
 
-## Features
+## 📌 Overview
+
+**SD Media Gallery** helps you showcase renovation projects, portfolios, construction work, case studies, and image collections in a clean and professional gallery.
+
+Each project supports unlimited images. Visitors can browse from a responsive grid and open a fullscreen lightbox with thumbnail navigation, keyboard controls, and mobile swipe support.
+
+**Perfect for:**
+- Renovation Companies & Construction Businesses
+- Interior Designers & Architects
+- Agencies & Freelance Portfolios
+- Before & After Project Showcases
+
+---
+
+## ✨ Features
 
 ### 🖼 Project Gallery System
-
-* Custom Post Type for Projects
-* Unlimited images per project
-* Featured image support
-* Drag & Drop image ordering
-* Project sorting via Menu Order
+- Custom Post Type for Projects
+- Unlimited images per project
+- Featured image support
+- Drag & Drop image ordering
+- Project sorting via Menu Order
 
 ### ⚡ Modern Gallery Experience
-
-* Responsive grid layout
-* 1–4 column support
-* Fullscreen lightbox
-* Thumbnail strip navigation
-* Previous / Next controls
-* Keyboard navigation
-* Mobile swipe support
+- Responsive grid layout (1–4 columns)
+- Fullscreen lightbox
+- Thumbnail strip navigation
+- Previous / Next controls
+- Keyboard navigation
+- Mobile swipe support
 
 ### 🎨 Customization
-
-* Built-in Custom CSS editor
-* Frontend-only styling changes
-* Quick CSS presets
-* Animation toggle
-* Default column settings
+- Built-in Custom CSS editor
+- Quick CSS presets
+- Animation toggle
+- Default column settings
 
 ### 🏷 Organization
-
-* Gallery Categories taxonomy
-* Category filtering via shortcode
-* Clean project management workflow
-
-### 📱 Mobile Optimized
-
-* Fully responsive design
-* Touch-friendly gallery controls
-* Optimized for phones and tablets
+- Gallery Categories taxonomy
+- Category filtering via shortcode
+- Clean project management workflow
 
 ### 📊 Admin Dashboard
-
-* Gallery statistics
-* Recent projects
-* Setup guide
-* Shortcode reference
-* Warning system for incorrect shortcode usage
-
----
-
-## Installation
-
-### Upload ZIP
-
-1. Go to WordPress Admin → Plugins → Add New
-2. Click Upload Plugin
-3. Upload `sd-media-gallery.zip`
-4. Click Install Now
-5. Activate the plugin
-
-### Manual Installation
-
-Upload the plugin folder to:
-
-```text
-/wp-content/plugins/sd-media-gallery/
-```
-
-Then activate it from:
-
-```text
-WordPress Admin → Plugins
-```
-
-You'll find the plugin at:
-
-```text
-Admin Sidebar → SD Gallery
-```
+- Gallery statistics
+- Recent projects overview
+- Setup guide
+- Shortcode reference
+- Warning system for incorrect shortcode usage
 
 ---
 
-## How To Use
-
-### Create a Project
-
-1. Navigate to:
-
-```text
-SD Gallery → Add New Project
-```
-
-2. Add:
-
-* Project Title
-* Featured Image
-* Gallery Images
-* Categories (optional)
-
-3. Publish the project
-
----
-
-### Display Gallery
-
-Basic shortcode:
-
-```shortcode
-[sd_gallery]
-```
-
-Recommended shortcode:
-
-```shortcode
-[sd_gallery
-columns="3"
-heading="Our Projects"
-subheading="Browse our latest work"]
-```
-
----
-
-## Shortcode Parameters
-
-| Parameter  | Description          |
-| ---------- | -------------------- |
-| columns    | Grid columns (1–4)   |
-| heading    | Section heading      |
-| subheading | Section subheading   |
-| category   | Category slug filter |
-
-### Example
-
-```shortcode
-[sd_gallery
-columns="3"
-category="bathroom"
-heading="Bathroom Renovations"
-subheading="Recent completed projects"]
-```
-
----
-
-## Important
-
-Always include:
-
-```shortcode
-heading=""
-subheading=""
-```
-
-Without these attributes:
-
-* Gallery heading will be missing
-* Mobile layout may not display correctly
-* Admin warning notice will appear
-
----
-
-## Example Gallery Structure
-
-| Project            | Images    |
-| ------------------ | --------- |
-| Kitchen Renovation | 12 Images |
-| Bathroom Remodel   | 8 Images  |
-| Office Interior    | 15 Images |
-| Home Extension     | 20 Images |
-
-Each project opens inside a fullscreen lightbox with thumbnail navigation.
-
----
-
-## Available CSS Classes
-
-### Gallery Layout
-
-```css
-.safi-gallery-section
-.safi-gallery-grid
-.safi-gallery-card
-```
-
-### Card Elements
-
-```css
-.safi-card-overlay
-.safi-card-title
-.safi-card-count
-```
-
-### Section Header
-
-```css
-.safi-gallery-heading
-.safi-gallery-subheading
-```
-
-### Lightbox
-
-```css
-.safi-lightbox
-.safi-lb-img
-.safi-lb-thumb
-```
-
----
-
-## Requirements
+## ⚙️ Requirements
 
 | Requirement | Version |
 | ----------- | ------- |
@@ -242,93 +67,177 @@ Each project opens inside a fullscreen lightbox with thumbnail navigation.
 
 ---
 
-## Changelog
+## 🚀 Installation
 
-### v3.0.0
+### Upload via WordPress Admin
 
-* Renamed plugin to SD Media Gallery
-* New shortcode `[sd_gallery]`
-* Dashboard screenshots section
-* Warning system for missing heading/subheading
-* Admin frontend notices
-* Custom CSS presets
-* Settings page
-* Social media integration
+1. Go to **WordPress Admin → Plugins → Add New**
+2. Click **Upload Plugin**
+3. Upload `sd-media-gallery.zip`
+4. Click **Install Now** → **Activate**
 
-### v2.0.0
+### Manual Installation
 
-* Added custom dashboard
-* Added Custom CSS editor
-* Added settings page
-* Improved admin interface
+Upload the plugin folder to:
 
-### v1.1.0
+```
+/wp-content/plugins/sd-media-gallery/
+```
 
-* Initial public release
-* Custom Post Type for projects
-* Unlimited gallery images
-* Lightbox support
-* Category filtering
+Then activate from **WordPress Admin → Plugins**.
+
+You'll find the plugin at **Admin Sidebar → SD Gallery**.
 
 ---
 
-## Upgrade Notice
+## 📖 How To Use
 
-### Upgrading From Older Versions
+### 1. Create a Project
+
+Go to **SD Gallery → Add New Project** and add:
+- Project Title
+- Featured Image
+- Gallery Images
+- Categories *(optional)*
+
+Publish the project.
+
+### 2. Display the Gallery
+
+**Basic shortcode:**
+```shortcode
+[sd_gallery]
+```
+
+**Recommended shortcode:**
+```shortcode
+[sd_gallery columns="3" heading="Our Projects" subheading="Browse our latest work"]
+```
+
+---
+
+## 🔧 Shortcode Parameters
+
+| Parameter    | Description                  |
+| ------------ | ---------------------------- |
+| `columns`    | Grid columns (1–4)           |
+| `heading`    | Section heading text         |
+| `subheading` | Section subheading text      |
+| `category`   | Category slug to filter by   |
+
+### Example
+
+```shortcode
+[sd_gallery
+  columns="3"
+  category="bathroom"
+  heading="Bathroom Renovations"
+  subheading="Recent completed projects"]
+```
+
+> ⚠️ **Important:** Always include `heading=""` and `subheading=""` attributes.  
+> Without them, the gallery heading will be missing, mobile layout may break, and an admin warning notice will appear.
+
+---
+
+## 🎨 CSS Classes
+
+### Gallery Layout
+```css
+.safi-gallery-section
+.safi-gallery-grid
+.safi-gallery-card
+```
+
+### Card Elements
+```css
+.safi-card-overlay
+.safi-card-title
+.safi-card-count
+```
+
+### Section Header
+```css
+.safi-gallery-heading
+.safi-gallery-subheading
+```
+
+### Lightbox
+```css
+.safi-lightbox
+.safi-lb-img
+.safi-lb-thumb
+```
+
+---
+
+## 📋 Changelog
+
+### v3.0.0
+- Renamed plugin to **SD Media Gallery**
+- New shortcode `[sd_gallery]`
+- Warning system for missing heading/subheading
+- Custom CSS presets
+- Settings page
+- Social media integration
+- Admin frontend notices
+
+### v2.0.0
+- Custom dashboard
+- Custom CSS editor
+- Improved admin interface
+
+### v1.1.0
+- Initial public release
+- Custom Post Type for projects
+- Unlimited gallery images
+- Lightbox support
+- Category filtering
+
+---
+
+## ⬆️ Upgrading From Older Versions
 
 Old shortcode:
-
 ```shortcode
 [safi_gallery]
 ```
 
 New shortcode:
-
 ```shortcode
 [sd_gallery]
 ```
 
-Update existing pages after upgrading.
+Update all existing pages after upgrading.
 
 ---
 
-## Author
+## 📄 License
 
-### Shohidul Dev
-
-Shopify & WordPress Developer
-
-Head of Operations at InsoSpark Agency
-
-GitHub: @shohiduldev
+Licensed under the **[GNU General Public License v2.0+](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)**
 
 ---
 
-## License
-
-GPL-2.0+
-
-Licensed under the GNU General Public License.
-
----
-
-## Support
+## 🤝 Support & Contributions
 
 If you find this plugin useful:
 
-⭐ Star the repository
+- ⭐ **Star** this repository
+- 🐞 **Report** issues
+- 🚀 **Suggest** new features
+- 🤝 **Contribute** improvements
 
-🐞 Report issues
+---
 
-🚀 Suggest features
+## 👤 Author
 
-🤝 Contribute improvements
+**Shohidul Dev**  
+Shopify & WordPress Developer · Head of Operations at InsoSpark Agency
 
-Built with ❤️ by Shohidul Dev
+[![GitHub](https://img.shields.io/badge/GitHub-@shohiduldev-181717?style=flat&logo=github)](https://github.com/shohiduldev)
+[![Threads](https://img.shields.io/badge/Threads-@shohiduldev-000000?style=flat&logo=threads)](https://threads.net/@shohiduldev)
+[![Telegram](https://img.shields.io/badge/Telegram-@shohiduldev-2CA5E0?style=flat&logo=telegram)](https://t.me/shohiduldev)
 
-#shohiduldev
+---
 
-Threads:   https://threads.net/@shohiduldev
-Telegram:  https://t.me/shohiduldev
-
-#shohiduldev
+*Built with ❤️ by Shohidul Dev · `#shohiduldev`*
